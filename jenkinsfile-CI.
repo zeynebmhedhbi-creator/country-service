@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Jamina-ENSI/Hello_example.git'
+                    url: 'https://github.com/zeynebmhedhbi-creator/country-service'
             }
         }
 
