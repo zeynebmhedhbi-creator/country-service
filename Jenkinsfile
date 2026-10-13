@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout code') {
             steps {
-                git branch: 'master', url: 'https://github.com/<votre-compte>/Country-service.git'
+                git branch: 'master', url: 'https://github.com/zeynebmhedhbi-creator/country-service.git'
             }
         }
         stage('Compile code') {
@@ -27,11 +27,6 @@ pipeline {
         stage('Package code') {
             steps {
                 sh 'mvn package'
-            }
-        }
-        stage('Test code') {
-            steps {
-                echo 'Hello'
             }
         }
     }
