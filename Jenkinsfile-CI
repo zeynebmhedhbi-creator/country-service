@@ -25,6 +25,11 @@ pipeline {
                 sh 'java Test'
             }
         }
+        stage('Test code') {
+            steps {
+                echo 'Hello'
+            }
+        }
        
     }
 }
